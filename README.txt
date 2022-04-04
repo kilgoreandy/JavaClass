@@ -4,7 +4,7 @@ This assignment must be submitted as a .zip file containing only your solution's
 For example, my submission for this assignment would be named DukeGExercise3.13.zip). There should be no directories within the zip file.
 
 
-Expected test program (EmployeeTest.java) console (System.out) output:
+Expected test program (Employee_Test.java) console (System.out) output:
 Benjamin Bernanke's yearly salary: 14814.72
 Paul Volcker's yearly salary: 28148.04
 Giving raises...
