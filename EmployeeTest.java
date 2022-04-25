@@ -14,8 +14,8 @@ public class EmployeeTest {
         //   Employee #2: Paul Volcker has a monthly salary of 2345.67
 
 
-        Employee one = new Employee("Benjamin", "Bernanke", 1234.56 );
-        Employee two = new Employee("Paul", "Volcker", 2345.67 );
+        Employee one = new Employee("Benjamin", "Bernanke", 14814.72 );
+        Employee two = new Employee("Paul", "Volcker", 28148.04 );
         // Display the employees' info (including yearly salary)
 
         System.out.println(one.getFirstName() + " " + one.getLastName()+ "'s yearly salary: " + one.getMonthlySalary());
