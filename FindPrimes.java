@@ -4,9 +4,10 @@
 
 /**
  *
- * @author StudentName
+ * @author Andy Kilgore
  */
 public class FindPrimes {
+    int count = 1;
        
     public static void main(String[] args) {
         System.out.println("Prime numbers < 10k:");
