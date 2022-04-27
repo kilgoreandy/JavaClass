@@ -7,7 +7,7 @@
  * @author Andy Kilgore
  */
 public class FindPrimes {
-    int count = 1;
+    static int count = 2;
        
     public static void main(String[] args) {
         System.out.println("Prime numbers < 10k:");
@@ -15,6 +15,16 @@ public class FindPrimes {
          * Let the isPrime method do the heavy lifting
          * If a given number is prime it should be displayed on its own line (non prime numbers are not displayed at all)
          */
+         while (count < 10001){
+             if (isPrime(count)){
+                 System.out.println(count);
+                 count++;
+             }
+             else {
+                 count++;
+             }
+
+             }
     }
     
     public static boolean isPrime(int num) {
@@ -38,8 +48,25 @@ public class FindPrimes {
          * Why are we able to limit our search for even divisors to those numbers less than or equal to the square root?
          * All of the numbers > the square root must be 
          * multiplied by a number < the square root to equal the target 
-         * number... so why not just check the numbers <= the square root?
+         * number... so why not just check the numbers <= the square root
          */        
+         int counter = 0;
+         double max; 
+         boolean prime = false;
+         if (num < 0){
+             prime = false;
+         }
+        max = java.lang.Math.sqrt(num);
+        while (counter <= max){
+            if (counter % num == 0 ){
+                prime =  false;
+                }
+            else {
+                counter++;
+                prime = true;
+                }
+
+         }
+         return prime;
     }
-    
 }
