@@ -50,16 +50,20 @@ public class FindPrimes {
          * multiplied by a number < the square root to equal the target 
          * number... so why not just check the numbers <= the square root
          */        
-         int counter = 0;
+         int counter = 2;
          double max; 
          boolean prime = false;
          if (num < 0){
-             prime = false;
+             return prime;
+         }
+         if (num == 2 || num == 3) {
+             return true;
          }
         max = java.lang.Math.sqrt(num);
         while (counter <= max){
-            if (counter % num == 0 ){
+            if (num % counter == 0 ){
                 prime =  false;
+                break;
                 }
             else {
                 counter++;
