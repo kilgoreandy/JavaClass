@@ -25,7 +25,7 @@ public class FindPrimes {
              }
              }
     }
-    
+     
     public static boolean isPrime(int num) {
         //We dont care about multipying 1 because regardless that does not change anything so we start at 2.
     int i = 2;
