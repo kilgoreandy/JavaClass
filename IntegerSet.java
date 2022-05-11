@@ -31,7 +31,9 @@ public class IntegerSet {
      * passed as arguments
      */
     // TODO: implement the union method
-        public IntegerSet
+        public IntegerSet union (IntegerSet i, IntegerSet j){
+            IntegerSet = i + j;
+        }
     
     /**
      * Return a new IntegerSet containing the intersection of the two IntegerSet objects
