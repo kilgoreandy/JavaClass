@@ -4,7 +4,17 @@
 
 /**
  *
- * @author StudentName
+ * @author Andy Kilgore
+ */
+
+
+/* 
+ * Homework Prompt
+ * Create class IntegerSet. Each IntegerSet
+ * object can hold integers in the range 0–100. The set is represented by an
+ * array of booleans. Array element a[i] is true if integer i is in the set.
+ * Array element a[j] is false if integer j is not in the set. The noargument constructor initializes the array to the “empty set” (i.e., all
+ * false values).
  */
 public class IntegerSet {
     
@@ -12,12 +22,16 @@ public class IntegerSet {
      * Creates a new instance of IntegerSet   
      */
     // TODO: implement the constructor
+        public IntegerSet(){
+            set boolean[] = {};
+        }
     
     /**
      * Return a new IntegerSet containing the union of the two IntegerSet objects
      * passed as arguments
      */
     // TODO: implement the union method
+        public IntegerSet
     
     /**
      * Return a new IntegerSet containing the intersection of the two IntegerSet objects
