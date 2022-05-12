@@ -75,35 +75,29 @@ public class IntegerSet {
     public String toString(){
 	String string=""; 
 	
-	boolean flag= true; // flag will tell is string has to be "---"
-
-	int k;
+	boolean bool= true; // bool will tell is string has to be "---"
 
 	for(int i=0; i<101; ++i){
 	    if(bset[i]==true){
-		flag= false;
-		string=string.concat(String.valueOf(i)); // concat has int parameter and returns
-		string=string.concat(" ");               // a new string. Old string  + int paramter
+		bool= false;
+		string=string + String.valueOf(i) + " "; 
 	    }
 	 }
 	
-	 if(flag)
+	 if(bool)
 	     string="---";  // string is empty 
-
 	  return string;
     }
     public boolean isEqualTo(IntegerSet a){  // search both arrays and returns false as soon as one 
 	// of the elements in either objects array is false 
-	boolean flag= true;
+	boolean bool= true;
 	
 	for(int i=0, j=0; i < this.bset.length; i++, j++){
 	    if(this.bset[i]==true  && a.bset[j]== true )
-		flag=true;
+		bool=true;
 	    else
-		flag=false;
-	    
+		bool=false;
 	}
-	return flag;
-  
+	return bool;
     }  
 }
