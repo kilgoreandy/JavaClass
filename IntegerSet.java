@@ -13,7 +13,7 @@ public class IntegerSet {
      */
     // TODO: implement the constructor
     public IntegerSet(){
-        bset = new boolean[100];
+        bset = new boolean[101];
     }
     
     /**
@@ -23,7 +23,7 @@ public class IntegerSet {
     // TODO: implement the union method
     public static IntegerSet union (IntegerSet a, IntegerSet b){
         IntegerSet unionset = new IntegerSet();
-        for(int i=0, j=0; i< 100; i++, j++){
+        for(int i=0, j=0; i< 101; i++, j++){
 	        if(a.bset[i]== true || b.bset[j]== true )
 		        unionset.bset[i]=true;
         }
@@ -36,7 +36,7 @@ public class IntegerSet {
     // TODO: implement the intersection method
      public static IntegerSet intersection(IntegerSet a, IntegerSet b){ // sets arr ele to true if both objects have true 
         IntegerSet interset= new IntegerSet();		
-	    for(int i=0, j=0; i<100; i++, j++){
+	    for(int i=0, j=0; i<101; i++, j++){
 	        if(a.bset[i]== true && b.bset[j]== true )
 		    interset.bset[i]=true; 
 	}
@@ -79,7 +79,7 @@ public class IntegerSet {
 
 	int k;
 
-	for(int i=0; i<100; ++i){
+	for(int i=0; i<101; ++i){
 	    if(bset[i]==true){
 		flag= false;
 		string=string.concat(String.valueOf(i)); // concat has int parameter and returns
@@ -92,12 +92,12 @@ public class IntegerSet {
 
 	  return string;
     }
-    public boolean isEqualTo(IntegerSet iSet){  // search both arrays and returns false as soon as one 
+    public boolean isEqualTo(IntegerSet a){  // search both arrays and returns false as soon as one 
 	// of the elements in either objects array is false 
 	boolean flag= true;
 	
-	for(int i=0, j=0; i<100; i++, j++){
-	    if(bset[i]==true  && iSet.bset[j]== true )
+	for(int i=0, j=0; i < this.bset.length; i++, j++){
+	    if(this.bset[i]==true  && a.bset[j]== true )
 		flag=true;
 	    else
 		flag=false;
